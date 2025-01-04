@@ -16,3 +16,11 @@ variable "instance_type" {
 variable "pem" {
   default = "backend"
 }
+
+variable "known_ips" {
+  type = list(string)
+  default = [
+    "86.156.185.83/32",
+    "213.32.248.64/32"
+  ]
+}
